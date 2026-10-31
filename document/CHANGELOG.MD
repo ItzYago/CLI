@@ -18,3 +18,8 @@
 - add Debbuger focado na file main.py.
 - terminal interativo com funções simples.
 - rich adicionado ao projeto e na file requirements.txt.
+
+## - 2026/10/31
+### Added
+
+- Debbuger da file input

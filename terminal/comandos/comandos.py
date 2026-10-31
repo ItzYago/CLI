@@ -1,4 +1,4 @@
-def comandos():
+def prompts():
     print("Comandos disponíveis:")
     print("1. help - Exibe a lista de comandos disponíveis.")
     print("2. exit - Sai do programa.")
