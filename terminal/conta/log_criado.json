@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "username": "castro",
+      "uid": 1000,
+      "home": "/home/castro",
+      "shell": "/bin/bash",
+      "senha_hash": "minhasenha123",
+      "conta_ativa": true,
+      "privilegios_admin": true,
+      "ultimo_login": "2026-10-31T21:15:00-03:00"
+    },
+    {
+      "username": "convidado",
+      "nome_completo": "Usuário Convidado",
+      "uid": 1001,
+      "grupos": ["convidado", "users"],
+      "home": "/home/convidado",
+      "shell": "/bin/bash",
+      "senha_hash": "senha12345",
+      "conta_ativa": true,
+      "privilegios_admin": false,
+      "ultimo_login": null
+    }
+  ]
+}

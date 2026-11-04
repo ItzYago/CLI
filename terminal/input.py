@@ -1,53 +1,33 @@
-import sys
-from time import sleep
+import json
+import time as tm
+from pathlib import Path
 
-from rich.console import Console
-from rich.panel import Panel
-from rich.prompt import Prompt
-from rich.text import Text
+from terminal.conta.conta_verificada import dentro_conta
 
-from terminal.comandos.comandos import prompts
-
-console = Console()
+CAMINHO_LOG = Path(__file__).parent / "conta" / "log_criado.json"
 
 
-def mostrar_mensagem(texto, estilo="cyan"):
-    console.print(Text(texto, style=estilo))
+def input_entrar(username=None, password=None):
+    with open(CAMINHO_LOG, "r", encoding="utf-8") as file:
+        dados = json.load(file)
+
+    if username is None:
+        username = input("Digite seu nome de usuário: ").strip()
+
+    if password is None:
+        password = input("Digite sua senha: ")
+
+    print("Verificando...")
+    tm.sleep(3)
+
+    for usuario in dados["usuarios"]:
+        if usuario["username"] == username and usuario["senha_hash"] == password:
+            print("Login bem-sucedido!")
+            return dentro_conta()
+
+    print("Login falhou. Usuário ou senha incorretos.")
+    return None
 
 
-while True:
-    entrada = Prompt.ask("[bold #a855f7]>[/]").strip().casefold()
-
-    if entrada == "help" or entrada == "h":
-        prompts()
-
-    elif entrada == "exit":
-        sleep(2)
-        console.print("[bold #c084fc]Até logo![/]")
-        sys.exit(0)
-
-    elif entrada == "clear" or entrada == "cls":
-        console.clear()
-
-    elif entrada == "version" or entrada == "v":
-        console.print(
-            Panel("Versão atual: 0.0.1", border_style="#a855f7", expand=False)
-        )
-
-    elif entrada == "about":
-        console.print(
-            Panel(
-                "Este é um programa de terminal simples desenvolvido em Python.",
-                title="[bold #c084fc]about[/]",
-                border_style="#a855f7",
-            )
-        )
-
-    elif entrada == "":
-        continue
-
-    else:
-        console.print(
-            f"[red]Comando não reconhecido:[/] [bold]{entrada}[/]. "
-            "Digite [bold #c084fc]help[/] para ver os comandos disponíveis."
-        )
+if __name__ == "__main__":
+    input_entrar()

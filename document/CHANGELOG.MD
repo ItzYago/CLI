@@ -23,3 +23,15 @@
 ### Added
 
 - Debbuger da file input
+
+## 2026/11/04
+### added
+
+- Arquivo json com logs para user.
+- File input para logar como usuário.
+- Mudanças na execução do main.
+- File cadastrar para futuro código de cadastro para users.
+- File comandos com mudança na versão do projeto.
+- Atualização e revisão de código.
+- Correção de erros do código do projeto.
+- Criação da pasta conta para os arquivos de log no terminal.
