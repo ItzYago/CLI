@@ -35,3 +35,14 @@
 - Atualização e revisão de código.
 - Correção de erros do código do projeto.
 - Criação da pasta conta para os arquivos de log no terminal.
+
+## 2026/11/07
+### added
+
+- Correção da file main.
+- Correção da file terminal.
+- Correção da file help.
+- Correção da file verificador (código fonte apagado).
+- Adição da file cmd_terminal.json para comandos futuros.
+- Alteração na file log_criado.json.
+- File comandos.json deletada

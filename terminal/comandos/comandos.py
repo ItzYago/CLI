@@ -5,3 +5,4 @@ def prompts():
     print("3. clear - Limpa a tela do terminal.")
     print("4. version - Exibe a versão atual do programa.")
     print("5. about - Exibe informações sobre o programa.")
+

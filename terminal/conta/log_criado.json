@@ -3,8 +3,6 @@
     {
       "username": "castro",
       "uid": 1000,
-      "home": "/home/castro",
-      "shell": "/bin/bash",
       "senha_hash": "minhasenha123",
       "conta_ativa": true,
       "privilegios_admin": true,
@@ -15,8 +13,6 @@
       "nome_completo": "Usuário Convidado",
       "uid": 1001,
       "grupos": ["convidado", "users"],
-      "home": "/home/convidado",
-      "shell": "/bin/bash",
       "senha_hash": "senha12345",
       "conta_ativa": true,
       "privilegios_admin": false,

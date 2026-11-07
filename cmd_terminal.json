@@ -1,0 +1,233 @@
+{
+  "linux": {
+    "navegacao_arquivos": [
+      {"comando": "pwd", "descricao": "Mostra o diretório atual"},
+      {"comando": "ls", "descricao": "Lista arquivos e pastas"},
+      {"comando": "ls -la", "descricao": "Lista incluindo ocultos e detalhes"},
+      {"comando": "cd pasta", "descricao": "Entra em uma pasta"},
+      {"comando": "cd ..", "descricao": "Volta uma pasta"},
+      {"comando": "cd ~", "descricao": "Vai para a pasta do usuário"},
+      {"comando": "mkdir pasta", "descricao": "Cria uma pasta"},
+      {"comando": "mkdir -p a/b/c", "descricao": "Cria pastas aninhadas"},
+      {"comando": "touch arquivo", "descricao": "Cria um arquivo vazio ou atualiza a data"},
+      {"comando": "cp origem destino", "descricao": "Copia arquivo ou pasta"},
+      {"comando": "cp -r origem destino", "descricao": "Copia pasta recursivamente"},
+      {"comando": "mv origem destino", "descricao": "Move ou renomeia"},
+      {"comando": "rm arquivo", "descricao": "Remove arquivo"},
+      {"comando": "rm -r pasta", "descricao": "Remove pasta e conteúdo"},
+      {"comando": "rmdir pasta", "descricao": "Remove pasta vazia"},
+      {"comando": "ln -s alvo link", "descricao": "Cria link simbólico"},
+      {"comando": "tree", "descricao": "Mostra a árvore de diretórios"},
+      {"comando": "du -sh pasta", "descricao": "Mostra tamanho de uma pasta"},
+      {"comando": "file arquivo", "descricao": "Identifica o tipo de arquivo"}
+    ],
+    "visualizacao_e_texto": [
+      {"comando": "cat arquivo", "descricao": "Mostra o conteúdo do arquivo"},
+      {"comando": "less arquivo", "descricao": "Lê arquivo com rolagem"},
+      {"comando": "head -n 20 arquivo", "descricao": "Mostra as primeiras 20 linhas"},
+      {"comando": "tail -n 20 arquivo", "descricao": "Mostra as últimas 20 linhas"},
+      {"comando": "tail -f arquivo", "descricao": "Acompanha um arquivo em tempo real"},
+      {"comando": "wc -l arquivo", "descricao": "Conta linhas, palavras e bytes"},
+      {"comando": "sort arquivo", "descricao": "Ordena linhas"},
+      {"comando": "uniq", "descricao": "Remove linhas duplicadas consecutivas"},
+      {"comando": "cut -d: -f1 arquivo", "descricao": "Extrai campos de cada linha"},
+      {"comando": "diff arq1 arq2", "descricao": "Compara dois arquivos"},
+      {"comando": "echo texto", "descricao": "Imprime texto"},
+      {"comando": "nano arquivo", "descricao": "Editor de texto simples"},
+      {"comando": "vim arquivo", "descricao": "Editor de texto avançado"}
+    ],
+    "pesquisa": [
+      {"comando": "grep texto arquivo", "descricao": "Procura texto dentro de arquivo"},
+      {"comando": "grep -r texto pasta", "descricao": "Procura texto recursivamente"},
+      {"comando": "grep -i texto arquivo", "descricao": "Busca sem diferenciar maiúsculas"},
+      {"comando": "find . -name \"*.txt\"", "descricao": "Procura arquivos pelo nome"},
+      {"comando": "find . -type d -name pasta", "descricao": "Procura pastas pelo nome"},
+      {"comando": "find . -mtime -1", "descricao": "Arquivos modificados nas últimas 24h"},
+      {"comando": "locate nome", "descricao": "Busca rápida no índice do sistema"},
+      {"comando": "which comando", "descricao": "Mostra o caminho do executável"},
+      {"comando": "whereis comando", "descricao": "Mostra binário, código e manual"}
+    ],
+    "permissoes_usuarios": [
+      {"comando": "whoami", "descricao": "Mostra o usuário atual"},
+      {"comando": "id", "descricao": "Mostra UID, GID e grupos"},
+      {"comando": "sudo comando", "descricao": "Executa como administrador"},
+      {"comando": "su - usuario", "descricao": "Troca de usuário"},
+      {"comando": "adduser nome", "descricao": "Cria usuário (Debian/Ubuntu)"},
+      {"comando": "passwd usuario", "descricao": "Altera a senha"},
+      {"comando": "chmod +x arquivo", "descricao": "Torna executável"},
+      {"comando": "chmod 755 arquivo", "descricao": "Define permissões numéricas"},
+      {"comando": "chown usuario:grupo arquivo", "descricao": "Muda dono e grupo"},
+      {"comando": "groups", "descricao": "Lista grupos do usuário"}
+    ],
+    "processos_sistema": [
+      {"comando": "uname -a", "descricao": "Informações do kernel e sistema"},
+      {"comando": "hostname", "descricao": "Mostra o nome da máquina"},
+      {"comando": "uptime", "descricao": "Tempo ligado e carga média"},
+      {"comando": "top", "descricao": "Processos e uso de recursos em tempo real"},
+      {"comando": "htop", "descricao": "Versão interativa do top"},
+      {"comando": "ps aux", "descricao": "Lista processos em execução"},
+      {"comando": "kill PID", "descricao": "Encerra processo pelo PID"},
+      {"comando": "killall nome", "descricao": "Encerra processos pelo nome"},
+      {"comando": "df -h", "descricao": "Espaço em disco"},
+      {"comando": "free -h", "descricao": "Uso de memória"},
+      {"comando": "lsblk", "descricao": "Lista discos e partições"},
+      {"comando": "mount", "descricao": "Lista pontos de montagem"},
+      {"comando": "journalctl -xe", "descricao": "Mostra logs recentes do systemd"},
+      {"comando": "systemctl status servico", "descricao": "Status de um serviço"},
+      {"comando": "systemctl restart servico", "descricao": "Reinicia um serviço"},
+      {"comando": "systemctl enable servico", "descricao": "Ativa serviço na inicialização"},
+      {"comando": "crontab -e", "descricao": "Edita tarefas agendadas"},
+      {"comando": "shutdown -h now", "descricao": "Desliga o sistema"},
+      {"comando": "reboot", "descricao": "Reinicia o sistema"}
+    ],
+    "rede": [
+      {"comando": "ping site.com", "descricao": "Testa conectividade"},
+      {"comando": "ip a", "descricao": "Mostra interfaces e endereços IP"},
+      {"comando": "ip route", "descricao": "Mostra tabela de rotas"},
+      {"comando": "ifconfig", "descricao": "Interfaces de rede (legado)"},
+      {"comando": "ss -tulpn", "descricao": "Portas abertas e serviços"},
+      {"comando": "netstat -tulpn", "descricao": "Portas abertas (legado)"},
+      {"comando": "curl url", "descricao": "Faz requisição HTTP"},
+      {"comando": "wget url", "descricao": "Baixa arquivo da internet"},
+      {"comando": "dig dominio", "descricao": "Consulta DNS"},
+      {"comando": "nslookup dominio", "descricao": "Consulta DNS simples"},
+      {"comando": "traceroute site.com", "descricao": "Mostra o caminho até o destino"},
+      {"comando": "ssh usuario@host", "descricao": "Acesso remoto"},
+      {"comando": "scp arquivo usuario@host:/destino", "descricao": "Copia arquivo via SSH"},
+      {"comando": "nmap host", "descricao": "Escaneia portas de um host"}
+    ],
+    "pacotes_debian_ubuntu": [
+      {"comando": "sudo apt update", "descricao": "Atualiza lista de pacotes"},
+      {"comando": "sudo apt upgrade", "descricao": "Atualiza pacotes instalados"},
+      {"comando": "sudo apt install pacote", "descricao": "Instala pacote"},
+      {"comando": "sudo apt remove pacote", "descricao": "Remove pacote"},
+      {"comando": "sudo apt autoremove", "descricao": "Remove dependências não usadas"},
+      {"comando": "apt search termo", "descricao": "Procura pacotes"}
+    ],
+    "pacotes_fedora_rhel": [
+      {"comando": "sudo dnf update", "descricao": "Atualiza pacotes"},
+      {"comando": "sudo dnf install pacote", "descricao": "Instala pacote"},
+      {"comando": "sudo dnf remove pacote", "descricao": "Remove pacote"}
+    ],
+    "pacotes_arch": [
+      {"comando": "sudo pacman -Syu", "descricao": "Atualiza o sistema"},
+      {"comando": "sudo pacman -S pacote", "descricao": "Instala pacote"},
+      {"comando": "sudo pacman -R pacote", "descricao": "Remove pacote"}
+    ],
+    "compactacao": [
+      {"comando": "tar -czvf arq.tar.gz pasta", "descricao": "Compacta pasta em tar.gz"},
+      {"comando": "tar -xzvf arq.tar.gz", "descricao": "Extrai tar.gz"},
+      {"comando": "zip -r arq.zip pasta", "descricao": "Compacta em zip"},
+      {"comando": "unzip arq.zip", "descricao": "Extrai zip"}
+    ],
+    "git_basico": [
+      {"comando": "git init", "descricao": "Inicia repositório"},
+      {"comando": "git status", "descricao": "Mostra estado dos arquivos"},
+      {"comando": "git add arquivo", "descricao": "Prepara arquivo para commit"},
+      {"comando": "git commit -m \"mensagem\"", "descricao": "Registra alterações"},
+      {"comando": "git push", "descricao": "Envia commits ao remoto"},
+      {"comando": "git pull", "descricao": "Baixa e mescla alterações"},
+      {"comando": "git log --oneline", "descricao": "Histórico resumido"},
+      {"comando": "git clone url", "descricao": "Clona repositório"}
+    ]
+  },
+
+
+  
+  "windows": {
+    "navegacao_arquivos": [
+      {"comando": "cd", "descricao": "Mostra ou muda o diretório atual"},
+      {"comando": "cd pasta", "descricao": "Entra em uma pasta"},
+      {"comando": "cd ..", "descricao": "Volta uma pasta"},
+      {"comando": "dir", "descricao": "Lista arquivos e pastas"},
+      {"comando": "dir /a", "descricao": "Lista incluindo ocultos"},
+      {"comando": "mkdir pasta", "descricao": "Cria pasta"},
+      {"comando": "rmdir pasta", "descricao": "Remove pasta vazia"},
+      {"comando": "rmdir /s /q pasta", "descricao": "Remove pasta e conteúdo sem confirmar"},
+      {"comando": "copy origem destino", "descricao": "Copia arquivo"},
+      {"comando": "xcopy origem destino /E /I", "descricao": "Copia pastas com subpastas"},
+      {"comando": "move origem destino", "descricao": "Move arquivo"},
+      {"comando": "ren antigo novo", "descricao": "Renomeia arquivo"},
+      {"comando": "del arquivo", "descricao": "Apaga arquivo"},
+      {"comando": "type arquivo", "descricao": "Mostra conteúdo de arquivo"},
+      {"comando": "tree", "descricao": "Mostra árvore de pastas"},
+      {"comando": "echo texto > arquivo", "descricao": "Cria arquivo com texto"}
+    ],
+    "pesquisa": [
+      {"comando": "findstr \"texto\" arquivo", "descricao": "Procura texto dentro de arquivo"},
+      {"comando": "findstr /s /i \"texto\" *.txt", "descricao": "Busca recursiva sem diferenciar maiúsculas"},
+      {"comando": "where comando", "descricao": "Mostra o caminho do executável"},
+      {"comando": "dir /s nome", "descricao": "Procura arquivo pelo nome em subpastas"}
+    ],
+    "usuarios_permissoes": [
+      {"comando": "whoami", "descricao": "Mostra o usuário atual"},
+      {"comando": "whoami /all", "descricao": "Mostra usuário, grupos e privilégios"},
+      {"comando": "net user", "descricao": "Lista usuários"},
+      {"comando": "net user nome senha /add", "descricao": "Cria usuário"},
+      {"comando": "net localgroup administradores", "descricao": "Lista membros do grupo administradores"},
+      {"comando": "icacls arquivo", "descricao": "Mostra permissões de arquivo"},
+      {"comando": "takeown /f arquivo", "descricao": "Assume posse de arquivo"},
+      {"comando": "runas /user:usuario programa", "descricao": "Executa programa com outro usuário"}
+    ],
+    "processos_sistema": [
+      {"comando": "systeminfo", "descricao": "Informações completas do sistema"},
+      {"comando": "hostname", "descricao": "Mostra o nome do computador"},
+      {"comando": "ver", "descricao": "Mostra a versão do Windows"},
+      {"comando": "tasklist", "descricao": "Lista processos em execução"},
+      {"comando": "taskkill /PID n /F", "descricao": "Encerra processo pelo PID"},
+      {"comando": "taskkill /IM programa.exe /F", "descricao": "Encerra processo pelo nome"},
+      {"comando": "wmic diskdrive get size,model", "descricao": "Informações dos discos"},
+      {"comando": "driverquery", "descricao": "Lista drivers instalados"},
+      {"comando": "sc query", "descricao": "Lista serviços"},
+      {"comando": "sc start servico", "descricao": "Inicia serviço"},
+      {"comando": "sc stop servico", "descricao": "Para serviço"},
+      {"comando": "shutdown /s /t 0", "descricao": "Desliga imediatamente"},
+      {"comando": "shutdown /r /t 0", "descricao": "Reinicia imediatamente"},
+      {"comando": "chkdsk C: /f", "descricao": "Verifica e corrige erros do disco"},
+      {"comando": "sfc /scannow", "descricao": "Verifica e repara arquivos do sistema"},
+      {"comando": "DISM /Online /Cleanup-Image /RestoreHealth", "descricao": "Repara a imagem do Windows"},
+      {"comando": "gpupdate /force", "descricao": "Atualiza políticas de grupo"}
+    ],
+    "rede": [
+      {"comando": "ipconfig", "descricao": "Mostra configurações de rede"},
+      {"comando": "ipconfig /all", "descricao": "Detalhes completos de rede"},
+      {"comando": "ipconfig /flushdns", "descricao": "Limpa cache de DNS"},
+      {"comando": "ipconfig /release", "descricao": "Libera endereço IP"},
+      {"comando": "ipconfig /renew", "descricao": "Renova endereço IP"},
+      {"comando": "ping site.com", "descricao": "Testa conectividade"},
+      {"comando": "tracert site.com", "descricao": "Mostra o caminho até o destino"},
+      {"comando": "nslookup dominio", "descricao": "Consulta DNS"},
+      {"comando": "netstat -ano", "descricao": "Conexões e portas com PID"},
+      {"comando": "netsh wlan show profiles", "descricao": "Lista redes Wi-Fi salvas"},
+      {"comando": "netsh wlan show profile name=\"rede\" key=clear", "descricao": "Mostra a senha de uma rede Wi-Fi salva"},
+      {"comando": "arp -a", "descricao": "Mostra tabela ARP"},
+      {"comando": "route print", "descricao": "Mostra tabela de rotas"},
+      {"comando": "curl url", "descricao": "Faz requisição HTTP (Windows 10+)"}
+    ],
+    "pacotes_winget": [
+      {"comando": "winget search termo", "descricao": "Procura pacotes"},
+      {"comando": "winget install pacote", "descricao": "Instala pacote"},
+      {"comando": "winget upgrade --all", "descricao": "Atualiza todos os pacotes"},
+      {"comando": "winget uninstall pacote", "descricao": "Remove pacote"},
+      {"comando": "winget list", "descricao": "Lista pacotes instalados"}
+    ],
+    "compactacao": [
+      {"comando": "tar -czvf arq.tar.gz pasta", "descricao": "Compacta pasta (Windows 10+)"},
+      {"comando": "tar -xzvf arq.tar.gz", "descricao": "Extrai arquivo tar.gz"},
+      {"comando": "Compress-Archive -Path pasta -DestinationPath arq.zip", "descricao": "Compacta em zip (PowerShell)"},
+      {"comando": "Expand-Archive -Path arq.zip -DestinationPath destino", "descricao": "Extrai zip (PowerShell)"}
+    ],
+    "powershell_basico": [
+      {"comando": "Get-ChildItem", "descricao": "Lista arquivos (equivalente ao dir)"},
+      {"comando": "Get-Content arquivo", "descricao": "Lê conteúdo de arquivo"},
+      {"comando": "Set-Location pasta", "descricao": "Muda de pasta"},
+      {"comando": "Get-Process", "descricao": "Lista processos"},
+      {"comando": "Stop-Process -Name nome", "descricao": "Encerra processo pelo nome"},
+      {"comando": "Get-Service", "descricao": "Lista serviços"},
+      {"comando": "Test-NetConnection site.com -Port 443", "descricao": "Testa conexão com porta"},
+      {"comando": "Get-ComputerInfo", "descricao": "Informações detalhadas do computador"},
+      {"comando": "Get-Help comando", "descricao": "Ajuda sobre um comando"},
+      {"comando": "Clear-Host", "descricao": "Limpa a tela"}
+    ]
+  }
+}
