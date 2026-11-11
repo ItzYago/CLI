@@ -15,7 +15,7 @@
 ## 📺 Demonstração
 
 <!-- Opção 1: GIF no próprio repositório (aparece direto no README) -->
-![Demonstração do terminal](introdu-projeto.mp4)
+![Demonstração do terminal](introdu-github.mp4)
 
 
 ---
@@ -63,6 +63,10 @@ Com o venv ativado, execute:
 
 ```bash
 python main.py
+```
+
+```bash
+Para obter a senha se usuário, entre na pasta Terminal/conta e veja a senha de "castro"
 ```
 
 ## 🛠️ Comandos
