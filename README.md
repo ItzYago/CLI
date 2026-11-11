@@ -67,7 +67,7 @@ python main.py
 ```
 
 ```bash
-Para obter a senha se usuário, entre na pasta Terminal/conta e veja a senha de "castro"
+Para obter a senha de usuário, entre na pasta Terminal/conta e veja a senha de "castro"
 ```
 
 ## 🛠️ Comandos
