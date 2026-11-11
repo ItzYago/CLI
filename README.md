@@ -14,8 +14,9 @@
 
 ## 📺 Demonstração
 
-<!-- Opção 1: GIF no próprio repositório (aparece direto no README) -->
-![Demonstração do terminal](introdu-github.mp4)
+<a href="introdu-github.mp4">
+ Video de demostração
+</a>
 
 
 ---
